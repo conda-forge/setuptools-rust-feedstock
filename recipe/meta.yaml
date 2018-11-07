@@ -1,5 +1,5 @@
 {% set name = "setuptools-rust" %}
-{% set version = "0.10.5" %}
+{% set version = "0.10.6" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PyO3/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 947caaab2ec9bce9f9599f5776ecca853e615693d3772f99976f9d7c3e7a7890
+  sha256: 1446d3985e4aaf4cc679fda8a48a73ac1390b627c8ae1bebe7d9e08bb3b33769
 
 build:
   noarch: python
