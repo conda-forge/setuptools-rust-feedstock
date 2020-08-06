@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/PyO3/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f3eb4af4cdacc5c019e893e2a4e6e43d4e3b146df8c08010735de97dc5e2dacf
+  url: https://pypi.io/packages/source/s/setuptools-rust/setuptools-rust-{{ version }}.tar.gz
+  sha256: 590c62dbeb61ae9a366621e0d43b54c1dc90f71c4d867f562eb64ba2d310f41b
 
 build:
   noarch: python
