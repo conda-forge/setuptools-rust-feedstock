@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
     - setuptools >=41
     - setuptools_scm >=3.4.3
   run:
-    - python
+    - python >=3.5
     - semantic_version >=2.6.0
     - setuptools >=41
     - toml >=0.9.0
