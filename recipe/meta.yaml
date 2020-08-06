@@ -1,27 +1,29 @@
 {% set name = "setuptools-rust" %}
-{% set version = "0.10.6" %}
+{% set version = "0.11.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: https://github.com/PyO3/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 1446d3985e4aaf4cc679fda8a48a73ac1390b627c8ae1bebe7d9e08bb3b33769
+  url: https://pypi.io/packages/source/s/setuptools-rust/setuptools-rust-{{ version }}.tar.gz
+  sha256: 590c62dbeb61ae9a366621e0d43b54c1dc90f71c4d867f562eb64ba2d310f41b
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
+    - setuptools >=41
+    - setuptools_scm >=3.4.3
   run:
-    - python
+    - python >=3.5
     - semantic_version >=2.6.0
-    - setuptools
+    - setuptools >=41
     - toml >=0.9.0
 
 test:
