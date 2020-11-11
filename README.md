@@ -5,11 +5,9 @@ Home: https://github.com/PyO3/setuptools-rust
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/setuptools-rust-feedstock/blob/master/LICENSE.txt)
 
 Summary: Setuptools rust extension plugin
-
-
 
 Current build status
 ====================
