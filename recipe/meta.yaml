@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/s/setuptools-rust/setuptools-rust-{{ version }}.tar.gz
   sha256: 04ea21f1bd029046fb87d098be4d7dc74663a58dd1f9fc6edcf8f3e4123ec4a8
+  patches:
+    - pr90.patch
 
 build:
   noarch: python
