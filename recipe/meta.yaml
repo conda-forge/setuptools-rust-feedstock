@@ -1,5 +1,5 @@
 {% set name = "setuptools-rust" %}
-{% set version = "0.12.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/setuptools-rust/setuptools-rust-{{ version }}.tar.gz
-  sha256: 647009e924f0ae439c7f3e0141a184a69ad247ecb9044c511dabde232d3d570e
+  sha256: eb6e6d41f01e63d042288e5c609684adf93426c10ea745ec324263f3fcbf27e9
 
 build:
   noarch: python
@@ -22,9 +22,10 @@ requirements:
     - setuptools_scm >=3.4.3
   run:
     - python >=3.6
-    - semantic_version >=2.6.0
+    - semantic_version >=2.8.2
     - setuptools >=46.1
-    - toml >=0.9.0
+    - tomli >=1.2.1
+    - typing_extensions >=3.7.4.3
 
 test:
   imports:
@@ -43,4 +44,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - davidhewitt
     - nicoddemus
