@@ -24,7 +24,6 @@ requirements:
     - python >=3.6
     - semantic_version >=2.8.2
     - setuptools >=46.1
-    - tomli >=1.2.1
     - typing_extensions >=3.7.4.3
 
 test:
