@@ -1,8 +1,7 @@
-{% set name = "setuptools-rust" %}
 {% set version = "1.3.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: setuptools-rust
   version: {{ version }}
 
 source:
