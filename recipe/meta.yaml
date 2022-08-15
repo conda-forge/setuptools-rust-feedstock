@@ -1,4 +1,4 @@
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 
 package:
   name: setuptools-rust
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/setuptools-rust/setuptools-rust-{{ version }}.tar.gz
-  sha256: 0b8aeb814afe0e9d7c31569ec0936d1f5201993530639244fa973e1742005671
+  sha256: 0e05e456645d59429cb1021370aede73c0760e9360bbfdaaefb5bced530eb9d7
 
 build:
   noarch: python
