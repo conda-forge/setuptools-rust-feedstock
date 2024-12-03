@@ -5,21 +5,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/s/setuptools-rust/setuptools_rust-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/s/setuptools-rust/setuptools_rust-{{ version }}.tar.gz
   sha256: 5d73e7eee5f87a6417285b617c97088a7c20d1a70fcea60e3bdc94ff567c29dc
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools >=62.4
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - semantic_version >=2.8.2,<3
     - setuptools >=62.4
 
@@ -30,6 +30,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/PyO3/setuptools-rust
